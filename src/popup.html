@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title></title>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/x-tmpl" id="tmpl-popup">
+<ul>
+    {% for (var i=0; i<o.recent.length; i++) { %}
+        <li>{%=o.recent[i].user%}\/{%=o.recent[i].repo%}
+        <span class="lastlooked">{%=o.recent[i].time%}</span>
+        </li>
+    {% } %}
+</ul>
+</script>
+
 </head>
 <body>
+<div id="status">
+Hover over a github repo link to see a preview.
+TODO: add list of last seen github repos here
+</div>
 </body>
 </html>
