@@ -10,7 +10,7 @@ Install dependencies as usual:
     
 Run webpack process:
 
-    npm run start
+    yarn run start
     
 In Chrome, either refresh the `chrome://extensions/` page or use the "Extensions Reloader" extension to reload the new code.
 
@@ -18,4 +18,10 @@ In Chrome, either refresh the `chrome://extensions/` page or use the "Extensions
 
 Run production build:
 
-    npm run prod
+    yarn run prod
+
+## Credits
+
+Used [chrome-extension-webpack-boilerplate][boil] for the project skeleton.
+
+[boil]: https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate "Boilerplate"
