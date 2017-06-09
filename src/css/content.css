@@ -8,18 +8,40 @@
   position: absolute;
   background-color: #fefefe;
   padding: 5px;
-  text-align: center;
+
   font-style: normal;
+  font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  line-height: 1;
 }
 
 #gh-tooltip h3 {
   margin: 5px 5px;
+  text-align: center;
 }
 #gh-tooltip .info {
   border-radius: 2px;
   padding: 5px;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   line-height: 2.3em;
+}
+
+#gh-tooltip .icon {
+  background-size: 16px;
+  background-position: left 3px top 8px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+#gh-tooltip .star {
+  background-image: url('../images/star.svg');
+}
+
+#gh-tooltip .fork {
+  background-size: 12px;
+  background-position: left 3px top 7px;
+  background-image: url('../images/fork.svg');
 }
 
 .gh-loading{

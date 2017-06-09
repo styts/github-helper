@@ -16,8 +16,8 @@ function renderTemplate (data) {
     updated_at: moment(data.updated_at).fromNow()
   }
   return tmpl(`<h3>{%=o.user%}/{%=o.repo%}</h3>
-<span class="info">Stars: {%=o.stars%}</span>
-<span class="info">Forks: {%=o.forks%}</span><br/>
+<span class="info icon star">{%=o.stars%}</span>
+<span class="info icon fork">{%=o.forks%}</span><br/>
 <span class="info">Open issues: {%=o.issues%}</span><br/>
 <span class="info">Last update: {%=o.updated_at%}</span>`, context)
 }
